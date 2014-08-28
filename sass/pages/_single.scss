@@ -1,0 +1,49 @@
+.bpost-container {
+  padding-top: 75px;
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      margin-bottom: .55em;
+      margin-top: .55em;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    h4 {
+      text-transform: uppercase;
+    }
+
+    article {
+      margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+  .bpost-container section {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+}
+
+
+article p:first-of-type {
+  padding-top: 10px;
+}
+
+.bpost-container p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.bpost-date {
+  font-size: 13px;
+}

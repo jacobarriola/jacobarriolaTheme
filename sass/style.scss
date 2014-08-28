@@ -1,0 +1,31 @@
+/*
+Theme Name: Personal Site Theme
+Theme URI:  http://jacobarriola.com
+Description:  Theme for personal sites to showcase blog posts, experience, projects and a contact page
+Author:  Jacob Arriola
+Author URI:  http://jacobarriola.com
+Version: 1
+*/
+
+
+// Twitter Bootstrap
+@import "vendors/_bootstrap";
+
+// Variables
+@import "helpers/variables";
+
+// Compass
+// @import "vendors/_base";
+
+// Global Styles
+@import "base/_type";
+
+// Section Specifics
+@import "sections/_header";
+@import "sections/_footer"; 
+
+// Page Specifics
+@import "pages/_home"; 
+@import "pages/_portfolio"; 
+@import "pages/single";
+

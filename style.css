@@ -8425,8 +8425,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 /* line 25, sass/pages/_single.scss */
-.bpost-container article {
-  margin-bottom: 50px;
+.bpost-container .comments-area {
+  margin-top: 50px;
 }
 
 @media (min-width: 1200px) {

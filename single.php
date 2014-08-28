@@ -19,16 +19,16 @@ get_header(); ?>
         <section>
         	<?php the_content(); ?>
 
-
-        </section>
-       </article>
-			
-    		<?php
+        	<?php
 				// If comments are open or we have at least one comment, load up the comment template
 				if ( comments_open() || '0' != get_comments_number() ) :
 					comments_template();
 				endif;
 			?>
+        </section>
+       </article>
+			
+
 
 
 		<?php endwhile; // end of the loop. ?>

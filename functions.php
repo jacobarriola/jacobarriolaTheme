@@ -135,3 +135,9 @@ require get_template_directory() . '/inc/jetpack.php';
 
 // Register Custom Navigation Walker for Bootstrap https://github.com/twittem/wp-bootstrap-navwalker
 require_once('wp_bootstrap_navwalker.php');
+
+// Change string of excerpt after posts
+function new_excerpt_more( $more ){
+	return '<p class="home-page-excerpt"> <a href="'. get_permalink( get_the_ID() ) . '">' . __('Read Article →', '') . '</a></p>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

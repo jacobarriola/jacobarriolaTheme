@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<h2><?php the_title(); ?></h2>
-			<span class="glyphicon glyphicon-time"></span> <span class="bpost-date"><?php the_date(); ?></span>
+			<span class="glyphicon glyphicon-calendar"></span> <span class="bpost-date"><?php the_date(); ?></span>
         </header>
         <section>
         	<?php the_content(); ?>

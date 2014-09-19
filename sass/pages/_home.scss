@@ -16,6 +16,15 @@
 	}
 }  
 
+.home-page-excerpt a {
+  color: $secondary-color;
+  padding-bottom: 3em;
+
+    &:hover {
+      text-decoration: underline;
+      }  
+}
+
 .about-me {
   ul {
     margin-top: 20px;

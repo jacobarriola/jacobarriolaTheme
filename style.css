@@ -3388,8 +3388,8 @@ input[type="button"].btn-block {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("css/fonts/glyphicons-halflings-regular.eot");
+  src: url("css/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("css/fonts/glyphicons-halflings-regular.woff") format("woff"), url("css/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("css/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 /* line 2382, sass/vendors/_bootstrap.scss */
@@ -8359,30 +8359,40 @@ h1, h2, h3, h4, h5, h6 {
   color: green;
 }
 
-/* line 20, sass/pages/_home.scss */
+/* line 19, sass/pages/_home.scss */
+.home-page-excerpt a {
+  color: green;
+  padding-bottom: 3em;
+}
+/* line 23, sass/pages/_home.scss */
+.home-page-excerpt a:hover {
+  text-decoration: underline;
+}
+
+/* line 29, sass/pages/_home.scss */
 .about-me ul {
   margin-top: 20px;
   list-style: none;
   padding-left: 0;
 }
-/* line 26, sass/pages/_home.scss */
+/* line 35, sass/pages/_home.scss */
 .about-me a {
   color: #333333;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
 @media (max-width: 768px) {
-  /* line 34, sass/pages/_home.scss */
+  /* line 43, sass/pages/_home.scss */
   .latest-posts h3 {
     line-height: 1.3;
   }
 
-  /* line 37, sass/pages/_home.scss */
+  /* line 46, sass/pages/_home.scss */
   .work h2 {
     font-size: 24px;
   }
 
-  /* line 41, sass/pages/_home.scss */
+  /* line 50, sass/pages/_home.scss */
   .home-headline h1 {
     font-size: 24px;
   }

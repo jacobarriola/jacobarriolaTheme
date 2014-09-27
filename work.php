@@ -10,8 +10,12 @@
 
 get_header(); ?>
 
-<p>This is the work.php</p>
-
+<p>This is the work.php static</p>
+<p>This is the work.php static</p>
+<p>This is the work.php static</p>
+<p>This is the work.php static</p>
+<p>This is the work.php static</p>
+<p>This is the work.php static</p>
 
 <?php 
 

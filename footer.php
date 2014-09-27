@@ -8,7 +8,9 @@
  */
 ?>
 
+    </div><!-- end row -->
 
+</div><!-- end container -->
 
 
     <!-- Bootstrap core JavaScript -->

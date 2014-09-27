@@ -9,9 +9,7 @@
 
 </div> <!-- end home-headline -->
 
-<div class="container">
-  
-    <div class="row">
+
 
         <div class="col-md-7 latest-posts">
         	<?php 
@@ -48,9 +46,7 @@
 
         </div><!-- end about me -->
 
-    </div><!-- end row -->
 
-</div><!-- end container -->
 
 
 

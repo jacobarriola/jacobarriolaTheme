@@ -4720,7 +4720,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Condensed', sans-serif; }
 
 .home-headline {
-  padding: 80px 15px 40px 15px;
+  padding: 0px 15px 40px 15px;
   text-align: center;
   width: 100%; }
 
@@ -4729,6 +4729,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .thumbnail {
   padding-top: 20px; }
+
+.container-main {
+  padding-top: 80px; }
 
 .navbar-inverse {
   background-color: #444; }
@@ -4831,6 +4834,3 @@ article p:first-of-type {
 
 .bpost-date {
   font-size: 13px; }
-
-body {
-  background-color: white; }

@@ -30,21 +30,53 @@
 
     			<p>There are no posts or pages</p>
 
-    		<?php endif; ?>	
+    		<?php endif; ?>	<!-- end WP Loop for recent blog posts -->
 
 		</div><!-- end latest posts -->
 
-        <div class="col-md-4 col-md-offset-1 about-me well">
+        <div class="col-md-4 col-md-offset-1">
 
-            <h3>About Me</h3>
-            <p>Front end developer who also dabbles in design.  Lover of backyard gardening and vegetarian Mexican/Central American foods.</p>
-            <ul>
-                <li><a href="https://github.com/jacobarriola">Github</li>
-                <li><a href="https://www.linkedin.com/in/jacobarriola">LinkedIn</li>
-                <li><a href="https://twitter.com/jacobarriola">Twitter</li>
-            </ul>
+            <div class="about-me well">
 
-        </div><!-- end about me -->
+                <h3>About Me</h3>
+                <p>Front end developer who also dabbles in design.  Lover of backyard gardening and vegetarian Mexican/Central American foods.</p>
+                <ul>
+                    <li><a href="https://github.com/jacobarriola">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/jacobarriola">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/jacobarriola">Twitter</a></li>
+                </ul>
+
+            </div><!-- end about me -->
+
+            <div class="latest-project">
+
+                <h3>Latest Project</h3>
+
+                <?php 
+                    // Arguments for $latest_project_post
+                    $args = array(
+                        'posts_per_page'    => 1,
+                        'post_type'         => 'work',
+                        );
+
+                    // set var for WP_Query
+                    $latest_project_post = new WP_Query( $args );
+
+                ?>
+                <!-- Begin Loop for Work custom post type -->
+                <?php if ( have_posts() ) : while ( $latest_project_post->have_posts() ) : $latest_project_post->the_post(); ?>
+
+                    <?php the_title(); ?>
+                    <?php the_excerpt(); ?>
+
+                <?php endwhile; else: ?>
+
+                <p>There are no latest projects</p>
+
+                <?php endif; ?> 
+
+            </div><!-- end latest-project -->
+        </div><!-- end sidebar -->
 
 
 

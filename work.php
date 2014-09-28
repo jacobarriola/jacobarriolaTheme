@@ -28,14 +28,12 @@ get_header(); ?>
 		<div class="col-sm-6 col-lg-4 work-entry">
 			<article class="entry">
               	<header>
-                	<img src="<?php bloginfo('template_directory'); ?>/img/box.png" class="img-responsive hidden-xs">
+                	<img src="<?php bloginfo('template_directory'); ?>/img/box.png" class="img-responsive">
 					<h2><a href="<?php the_permalink() ;?>"><?php the_title(); ?></a></h2>
 				</header>
-				
-				<?php the_excerpt(); ?>
-
 
 				<?php
+				//Display custom taxonmy for work posts
 				$terms = get_the_terms( $post->ID, 'work_type' );
 										
 				if ( $terms && ! is_wp_error( $terms ) ) : 
@@ -46,7 +44,7 @@ get_header(); ?>
 						$work_links[] = $term->name;
 					}
 										
-					$on_work_type = join( ", ", $work_links );
+					$on_work_type = join( " &middot; ", $work_links );
 				?>
 
 				<p class="">
@@ -54,7 +52,6 @@ get_header(); ?>
 				</p>
 
 				<?php endif; ?>
-
 
 			</article>	
 		</div>

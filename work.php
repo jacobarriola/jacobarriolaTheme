@@ -10,6 +10,10 @@
 
 get_header(); ?>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ff64ffe7c1a084f78bccce6e204ff07fc9b8fab
 
 
 

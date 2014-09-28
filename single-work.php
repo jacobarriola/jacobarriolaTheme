@@ -1,17 +1,34 @@
 <?php get_header(); ?>
 
-<p>This is the single-work.php file.</p>
+	<div class="container bpost-container"> 
+        <article>
+	        <header class="text-center">
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<h3><?php the_title() ;?></h3>	
-	<?php the_field( 'description' ); ?>
-	<hr>
+				<h2><?php the_title(); ?></h2>
+				<span class="glyphicon glyphicon-calendar"></span> <span class="bpost-date"><?php the_date(); ?></span>
+	        </header>
+	        <section>
+	        	<?php the_field( 'description' ); ?>
 
-<?php endwhile; else: ?>
-	
-	<p>There are no posts or pages here</p>
+	        	<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || '0' != get_comments_number() ) :
+						comments_template();
+					endif;
+				?>
+	        </section>
+        </article>
+			
 
-<?php endif; ?>
+		<?php endwhile; else: ?>
 
+		<p>There are no posts or pages here</p>
+
+		<?php endif; // end of the loop. ?>
+
+    </div><!-- /.container -->
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

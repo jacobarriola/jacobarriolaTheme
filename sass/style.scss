@@ -9,23 +9,22 @@ Version: 1
 
 
 // Twitter Bootstrap
-@import "vendors/_bootstrap";
+@import "vendors/bootstrap";
 
 // Variables
 @import "helpers/variables";
 
 // Compass
-// @import "vendors/_base";
+// @import "vendors/base";
 
 // Global Styles
-@import "base/_type";
+@import "base/type";
 
 // Section Specifics
-@import "sections/_header";
-@import "sections/_footer"; 
+@import "sections/header";
+@import "sections/footer"; 
 
 // Page Specifics
-@import "pages/_home"; 
-@import "pages/_portfolio"; 
+@import "pages/home"; 
+@import "pages/portfolio"; 
 @import "pages/single";
-

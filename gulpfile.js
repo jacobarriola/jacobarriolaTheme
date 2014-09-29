@@ -22,12 +22,10 @@ gulp.task('sass', function () {
 // Default task to be run with `gulp`
 gulp.task('default', ['sass', 'browser-sync'], function () {
     gulp.watch("sass/*.scss", ['sass']);
-<<<<<<< HEAD
     gulp.watch("sass/base/*.scss", ['sass']);
     gulp.watch("sass/helpers/*.scss", ['sass']);
     gulp.watch("sass/pages/*.scss", ['sass']);
     gulp.watch("sass/sections/*.scss", ['sass']);
     gulp.watch("sass/vendors/*.scss", ['sass']);
-=======
->>>>>>> 5ff64ffe7c1a084f78bccce6e204ff07fc9b8fab
+
 });

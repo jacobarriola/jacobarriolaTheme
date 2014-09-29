@@ -8457,18 +8457,69 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 150px;
   }
 }
-/* line 37, sass/pages/_single.scss */
-article p:first-of-type {
-  padding-top: 10px;
-}
-
-/* line 41, sass/pages/_single.scss */
+/* line 38, sass/pages/_single.scss */
 .bpost-container p {
   line-height: 1.8;
   margin-bottom: 25px;
 }
 
-/* line 46, sass/pages/_single.scss */
+/* line 43, sass/pages/_single.scss */
 .bpost-date {
   font-size: 13px;
+}
+
+/* line 3, sass/pages/_single-work.scss */
+.single-work article {
+  margin-bottom: 2.5em;
+}
+/* line 6, sass/pages/_single-work.scss */
+.single-work article header {
+  margin-bottom: 2em;
+}
+/* line 12, sass/pages/_single-work.scss */
+.single-work aside {
+  font-size: .8em;
+}
+/* line 15, sass/pages/_single-work.scss */
+.single-work aside .glyphicon {
+  margin-right: .1em;
+  margin-left: .3em;
+}
+/* line 21, sass/pages/_single-work.scss */
+.single-work h1 {
+  margin-top: 0;
+}
+/* line 25, sass/pages/_single-work.scss */
+.single-work h2 {
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+/* line 34, sass/pages/_single-work.scss */
+.project-taxonomy-single {
+  font-size: .9em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 42, sass/pages/_single-work.scss */
+  .single-work article {
+    left: 33.33333333%;
+    padding-left: 30px;
+    margin-bottom: 0px;
+  }
+  /* line 48, sass/pages/_single-work.scss */
+  .single-work aside {
+    right: 66.66666667%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 59, sass/pages/_single-work.scss */
+  .single-work article {
+    left: 25%;
+  }
+  /* line 63, sass/pages/_single-work.scss */
+  .single-work aside {
+    right: 75%;
+  }
 }

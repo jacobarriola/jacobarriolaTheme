@@ -38,7 +38,7 @@
 
             <div class="about-me well">
 
-                <h3>About Me</h3>
+                <h2>About Me</h2>
                 <p>Front end developer who also dabbles in design.  Lover of backyard gardening and vegetarian Mexican/Central American foods.</p>
                 <ul>
                     <li><a href="https://github.com/jacobarriola">Github</a></li>
@@ -50,7 +50,7 @@
 
             <div class="latest-project">
 
-                <h3>Latest Project</h3>
+                <h2>Latest Project</h2>
 
                 <?php 
                     // Arguments for $latest_project_post
@@ -63,17 +63,28 @@
                     $latest_project_post = new WP_Query( $args );
 
                 ?>
-                <!-- Begin Loop for Work custom post type -->
-                <?php if ( have_posts() ) : while ( $latest_project_post->have_posts() ) : $latest_project_post->the_post(); ?>
 
-                    <?php the_title(); ?>
-                    <?php the_excerpt(); ?>
+                <?php 
+                // Loop for custom post type => work
+                if ( have_posts() ) : while ( $latest_project_post->have_posts() ) : $latest_project_post->the_post(); ?>
 
-                <?php endwhile; else: ?>
+                    <?php 
+                    // Grab custom field 'image'
+                        $image =  get_field( 'image' ); 
 
-                <p>There are no latest projects</p>
+                        if ( !empty($image) ): ?>
 
-                <?php endif; ?> 
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive img-thumbnail" /></a>
+
+                    <?php endif; // end custom field 'image' ?> 
+
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                    <p><?php the_excerpt(); ?></p>
+                    <p class="home-page-excerpt"><a href="<?php the_permalink(); ?>">See the project →</a></p>
+
+                <?php endwhile; // end while for custom post type => work ?>
+
+                <?php endif; // end loop for custom post type => work ?> 
 
             </div><!-- end latest-project -->
         </div><!-- end sidebar -->

@@ -16,6 +16,10 @@
 	}
 }  
 
+.about-me p, .latest-project p {
+  font-size: .8em;
+}
+
 .home-page-excerpt a {
   color: $secondary-color;
   padding-bottom: 3em;
@@ -26,6 +30,8 @@
 }
 
 .about-me {
+  margin-bottom: 4em;
+
   ul {
     margin-top: 20px;
     list-style: none;

@@ -25,7 +25,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-		<div class="col-sm-4">
+		<div class="col-sm-6 col-md-6">
 			<article class="entry">
               	<header>
               		<div class="work-post-image">

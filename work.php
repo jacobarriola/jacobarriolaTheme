@@ -35,7 +35,7 @@ get_header(); ?>
 
               			if ( !empty($image) ): ?>
 
-              				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
+              				<a href="<?php the_permalink() ;?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" /></a>
 
               			<?php endif; ?>	
                 		

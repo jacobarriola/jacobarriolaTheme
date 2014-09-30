@@ -4,7 +4,7 @@
 		margin-bottom: 2.5em;
 
 		header {
-			margin-bottom: 2em;
+			margin-bottom: 5em;
 		}
 	}
 
@@ -27,13 +27,37 @@
 		text-transform: uppercase;
 		font-size: 1em;
 	}
-
-
 }
+
+.project-gallery {
+	list-style: none;
+	padding: 0;
+
+	li {
+		margin-bottom: 8em;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	img {
+		margin: 0 auto;
+	}
+}
+
 
 .project-taxonomy-single {
 		font-size: .9em;
 	}
+
+.work-publication {
+	font-size: .8em;
+
+	.glyphicon {
+		padding-right: .5em;
+	}
+}
 
 @media screen and (min-width: 768px){
 

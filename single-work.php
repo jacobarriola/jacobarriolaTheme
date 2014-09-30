@@ -31,18 +31,37 @@
 					<?php endif; ?>
 
 		        </header>
-		        <section>
-		        	<?php 
+		        <section class="text-center">
 
-          			$image =  get_field( 'image' ); 
+					<?php 
+					// check if the repeater field has rows of data
+					if( have_rows('image_main') ): ?>
 
-          			if ( !empty($image) ): ?>
+					<ul class="project-gallery">
 
-          				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
+					<?php 
+					// loop through the rows of data
+					while( have_rows('image_main') ): the_row(); 
 
-          			<?php endif; ?>	
+						// vars
+						$image = get_sub_field('image');
+
+						?>
+						<li class="project-gallery-item">
+
+						<?php if ( !empty($image) ): ?>
+
+							
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" class="img-responsive"/>
+
+						<?php endif; ?>	
+
+						</li><!--end .project-gallery-item -->
+					<?php endwhile; ?>
+
+					</ul><!-- end .project-gallery -->
+					<?php endif; ?>
 		        </section>
-
 
 	        </article>
 
@@ -50,7 +69,7 @@
 
 	        	<h2>About This Project</h2>
 	        	<p class="project-description"><?php the_field( 'description' ); ?></p>
-	        	<p>Published on: <?php the_date(); ?></p> 
+	        	<p class="work-publication"><span class="glyphicon glyphicon-calendar"></span>Published on: <?php the_date(); ?></p> 
 
 	        	<h2>Project Tags</h2>
 	        	<?php // get project tags

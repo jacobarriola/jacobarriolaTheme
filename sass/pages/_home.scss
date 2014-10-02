@@ -31,6 +31,7 @@ color: #333;
 .home-page-excerpt a {
   color: $secondary-color;
   padding-bottom: 3em;
+  text-decoration: none;
 
     &:hover {
       text-decoration: underline;

@@ -8256,69 +8256,69 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-/* line 1, sass/base/_type.scss */
+/* line 1, sass/base/_global.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
 
-/* line 6, sass/base/_type.scss */
-a {
+/* line 6, sass/base/_global.scss */
+p a {
+  color: green;
+  text-decoration: underline;
+}
+/* line 9, sass/base/_global.scss */
+p a:hover {
   color: #333;
 }
-/* line 8, sass/base/_type.scss */
-a:hover {
-  color: green;
-  text-decoration: none;
-}
 
-/* line 14, sass/base/_type.scss */
+/* line 14, sass/base/_global.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* line 19, sass/base/_type.scss */
+/* line 19, sass/base/_global.scss */
 .home-headline {
   padding: 0px 15px 40px 15px;
   text-align: center;
   width: 100%;
 }
 
-/* line 25, sass/base/_type.scss */
+/* line 25, sass/base/_global.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 29, sass/base/_type.scss */
+/* line 29, sass/base/_global.scss */
 .thumbnail {
   padding-top: 20px;
 }
 
-/* line 33, sass/base/_type.scss */
+/* line 33, sass/base/_global.scss */
 .img-thumbnail {
   padding: 9px;
 }
 
-/* line 37, sass/base/_type.scss */
+/* line 37, sass/base/_global.scss */
 .container-main {
   padding: 80px 0;
 }
 
-/* line 41, sass/base/_type.scss */
+/* line 41, sass/base/_global.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.625em;
 }
 
-/* line 46, sass/base/_type.scss */
+/* line 46, sass/base/_global.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.625em;
 }
 
-/* line 51, sass/base/_type.scss */
+/* line 51, sass/base/_global.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -8371,67 +8371,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 1, sass/pages/_home.scss */
+a {
+  color: #333;
+}
+/* line 3, sass/pages/_home.scss */
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+
+/* line 9, sass/pages/_home.scss */
 .home-headline h1 {
   font-size: 48px;
   color: green;
 }
 
-/* line 6, sass/pages/_home.scss */
+/* line 14, sass/pages/_home.scss */
 .latest-posts {
   margin-bottom: 75px;
 }
-/* line 10, sass/pages/_home.scss */
+/* line 18, sass/pages/_home.scss */
 .latest-posts h3 a {
   color: #333333;
 }
-/* line 12, sass/pages/_home.scss */
+/* line 20, sass/pages/_home.scss */
 .latest-posts h3 a:hover {
   color: green;
 }
 
-/* line 19, sass/pages/_home.scss */
+/* line 27, sass/pages/_home.scss */
 .about-me p, .latest-project p {
   font-size: .8em;
 }
 
-/* line 23, sass/pages/_home.scss */
+/* line 31, sass/pages/_home.scss */
 .home-page-excerpt a {
   color: green;
   padding-bottom: 3em;
 }
-/* line 27, sass/pages/_home.scss */
+/* line 35, sass/pages/_home.scss */
 .home-page-excerpt a:hover {
   text-decoration: underline;
 }
 
-/* line 32, sass/pages/_home.scss */
+/* line 40, sass/pages/_home.scss */
 .about-me {
   margin-bottom: 4em;
 }
-/* line 35, sass/pages/_home.scss */
+/* line 43, sass/pages/_home.scss */
 .about-me ul {
   margin-top: 20px;
   list-style: none;
   padding-left: 0;
 }
-/* line 41, sass/pages/_home.scss */
+/* line 49, sass/pages/_home.scss */
 .about-me a {
   color: #333333;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
 @media (max-width: 768px) {
-  /* line 49, sass/pages/_home.scss */
+  /* line 57, sass/pages/_home.scss */
   .latest-posts h3 {
     line-height: 1.3;
   }
 
-  /* line 52, sass/pages/_home.scss */
+  /* line 60, sass/pages/_home.scss */
   .work h2 {
     font-size: 24px;
   }
 
-  /* line 56, sass/pages/_home.scss */
+  /* line 64, sass/pages/_home.scss */
   .home-headline h1 {
     font-size: 24px;
   }
@@ -8460,16 +8470,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 7, sass/pages/_single.scss */
 .bpost-container h1 {
-  margin-bottom: .55em;
-  margin-top: .55em;
+  font-size: 3.5em;
 }
-/* line 12, sass/pages/_single.scss */
+/* line 11, sass/pages/_single.scss */
 .bpost-container h2 {
-  font-size: 40px;
+  font-size: 2em;
 }
-/* line 16, sass/pages/_single.scss */
+/* line 15, sass/pages/_single.scss */
 .bpost-container h3 {
-  font-size: 22px;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 /* line 20, sass/pages/_single.scss */
 .bpost-container h4 {
@@ -8480,24 +8490,40 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 50px;
 }
 
-@media (min-width: 1200px) {
-  /* line 30, sass/pages/_single.scss */
-  .bpost-container section {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-}
-/* line 38, sass/pages/_single.scss */
+/* line 29, sass/pages/_single.scss */
 .bpost-container p {
   line-height: 1.8;
   margin-bottom: 25px;
 }
 
-/* line 43, sass/pages/_single.scss */
+/* line 34, sass/pages/_single.scss */
 .bpost-date {
   font-size: 13px;
 }
 
+@media (min-width: 768px) {
+  /* line 41, sass/pages/_single.scss */
+  .bpost-container h1 {
+    font-size: 5em;
+  }
+  /* line 45, sass/pages/_single.scss */
+  .bpost-container h3 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 992px) {
+  /* line 54, sass/pages/_single.scss */
+  .bpost-container h1 {
+    font-size: 6em;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 63, sass/pages/_single.scss */
+  .bpost-container section {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
 /* line 3, sass/pages/_single-work.scss */
 .single-work article {
   margin-bottom: 2.5em;

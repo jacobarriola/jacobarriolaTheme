@@ -1,3 +1,11 @@
+a {
+color: #333;
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
 .home-headline h1 {
     font-size: 48px;
     color: green;

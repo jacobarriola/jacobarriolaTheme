@@ -74,7 +74,7 @@
 
                         if ( !empty($image) ): ?>
 
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive img-thumbnail" /></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" /></a>
 
                     <?php endif; // end custom field 'image' ?> 
 

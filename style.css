@@ -8390,59 +8390,68 @@ a:hover {
 .latest-posts {
   margin-bottom: 75px;
 }
-/* line 18, sass/pages/_home.scss */
+/* line 17, sass/pages/_home.scss */
+.latest-posts header {
+  margin-bottom: 20px;
+}
+/* line 22, sass/pages/_home.scss */
 .latest-posts h3 a {
   color: #333333;
 }
-/* line 20, sass/pages/_home.scss */
+/* line 24, sass/pages/_home.scss */
 .latest-posts h3 a:hover {
   color: green;
 }
 
-/* line 27, sass/pages/_home.scss */
+/* line 31, sass/pages/_home.scss */
+.latest-project h2 {
+  margin-bottom: 20px;
+}
+
+/* line 35, sass/pages/_home.scss */
 .about-me p, .latest-project p {
   font-size: .8em;
 }
 
-/* line 31, sass/pages/_home.scss */
+/* line 39, sass/pages/_home.scss */
 .home-page-excerpt a {
   color: green;
   padding-bottom: 3em;
   text-decoration: none;
 }
-/* line 36, sass/pages/_home.scss */
+/* line 44, sass/pages/_home.scss */
 .home-page-excerpt a:hover {
   text-decoration: underline;
 }
 
-/* line 41, sass/pages/_home.scss */
+/* line 49, sass/pages/_home.scss */
 .about-me {
   margin-bottom: 4em;
 }
-/* line 44, sass/pages/_home.scss */
+/* line 52, sass/pages/_home.scss */
 .about-me ul {
   margin-top: 20px;
   list-style: none;
   padding-left: 0;
 }
-/* line 50, sass/pages/_home.scss */
+/* line 58, sass/pages/_home.scss */
 .about-me a {
   color: #333333;
   font-family: "Open Sans Condensed", sans-serif;
 }
 
 @media (max-width: 768px) {
-  /* line 58, sass/pages/_home.scss */
+  /* line 66, sass/pages/_home.scss */
   .latest-posts h3 {
     line-height: 1.3;
   }
 
-  /* line 61, sass/pages/_home.scss */
+  /* line 69, sass/pages/_home.scss */
   .work h2 {
     font-size: 24px;
   }
 
-  /* line 65, sass/pages/_home.scss */
+  /* line 73, sass/pages/_home.scss */
   .home-headline h1 {
     font-size: 24px;
   }

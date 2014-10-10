@@ -14,6 +14,10 @@ color: #333;
 .latest-posts {
   margin-bottom: 75px;
 
+  header {
+    margin-bottom: 20px;
+  }
+
 	h3 {
 		a {
 			color: $primary-color;
@@ -23,6 +27,10 @@ color: #333;
 		}
 	}
 }  
+
+.latest-project h2 {
+  margin-bottom: 20px;
+}
 
 .about-me p, .latest-project p {
   font-size: .8em;
